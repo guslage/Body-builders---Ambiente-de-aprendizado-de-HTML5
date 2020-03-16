@@ -1,0 +1,32 @@
+<head>
+<style>
+#div {
+	background-color: grey;
+    width: 350px;
+    height: 70px;
+    padding: 1%;
+}
+</style>
+<script>
+function PermiteLargar(ev) {
+    ev.preventDefault();
+}
+
+function arrastar(ev) {
+    ev.dataTransfer.setData("Text", ev.target.id);
+}
+
+function largar(ev) {
+    var data = ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
+    ev.preventDefault();
+}
+</script>
+</head>
+<body>
+
+<div id="div" ondrop="largar(event)" ondragover="PermiteLargar(event)"></div>
+<br>
+<p id="arrast1" draggable="true" ondragstart="arrastar(event)">Este é um parágrafo arrastável. Arraste-o para dentro do retângulo.</p>
+
+</body>

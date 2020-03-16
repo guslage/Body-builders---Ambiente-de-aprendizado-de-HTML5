@@ -1,0 +1,303 @@
+/*CSS DOS ELEMENTOS PADRÃO*/
+body {
+  	background-color: #eee; 
+}
+
+figure{  
+    display: inline-block;
+    text-align:center;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+	height: 300px;
+}
+
+input[type="file"] {
+	display: none;
+}
+/*FIM DOS ELEMENTOS PADRÃO*/
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/*FRAMEWORK DO SITE*/
+.row.no-gutter [class*='col-']:not(:first-child):not(:last-child) {
+  padding-right:0;
+  padding-left:0;
+}
+.row.no-gutter [class*='col-']:first-child {
+  padding-right:0;
+}
+.row.no-gutter [class*='col-']:last-child {
+  padding-left:0;
+  padding-right:0;
+}
+
+.btn:focus, .btn:active, input {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+#esq {
+  padding: 0;
+	overflow: auto;
+  height: 100%;
+  font-size: 14px;
+}
+
+#esq .nav-link {
+	color: #34515E;
+}
+
+#esq .nav-item {
+  background-color: #fafafA;
+  border-bottom: 1px solid #eee;
+}
+
+#esq .nav-item:hover {
+  border-left: 5px solid #3b9180;
+
+}
+
+#esq .nav-header {
+  background-color: #2B7A78;
+  color: #e4f1fe;
+  padding: 4%;
+  text-align: center;
+  font-size: 16px;
+}  
+
+#page-header {
+  text-align: center;
+  background-color: #3aafa9;
+  color: #34515e;
+  width: 100%;
+  padding: 0.5%;
+} 
+
+#page-body {
+	background-color: #fff9f9;
+	color:  #2e343b;
+	border-left: 1px solid #a6a9ad;
+	border-right: 1px solid #a6a9ad;
+	font-size: 16px;
+}
+
+#page-principal {
+	padding: 2%;
+}
+
+.code-ex {
+	background-color:  #474747;
+ 	padding: 1%;
+  color: #52b3d9;
+}
+
+.code-ex .btn {
+	margin-top: 1%;
+}
+
+.CodeMirror {
+  width: 100%;
+  font-size: 17px;
+  height: 500px;
+}
+
+#page-atr h2 {
+	background-color: #e55244;
+  color:#67221b;
+  padding: 1%;
+  box-shadow: 0px 15px 15px -15px #111; 
+  width: 100%;
+}
+
+#page-atr-body {
+	padding: 2%;
+	margin-top: -2%;
+	margin-bottom: -2%;
+}
+
+.atr {
+	background-color: #eee;
+	padding: 1%;
+	margin-top: 1%;
+}
+
+.atr-header {
+	border-bottom: 1px solid black;
+	margin-bottom: 1%;
+}
+
+.atr-title {
+	display: inline-block;
+}
+
+.atr-header form {
+	float: right;
+}
+
+#final {
+	padding: 2%;
+}
+
+#modalCadastro .form-control {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  border-bottom: 1px #3AAFA9 solid;
+}
+
+.form-control:focus, .form-control:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.px-3 {
+  text-align: center;
+}
+
+body.modal-open > :not(.modal) {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.custom-file {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 1%;
+}
+.custom-file:hover{
+  background-color: #eee;
+  color: #5e5e5e;
+}
+
+.pfl{
+  height: 150px; 
+  width: 150px; 
+  border-radius: 50%; 
+  border: none; 
+  margin-top: 3%;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+#text-editor {
+  margin-top: 1%;
+}
+
+#editor-group button {
+  background-color: #3aafa9;
+  border: none;
+  padding: 1%;  
+}
+
+#editor-group button:hover {
+  background-color: #34515e;
+  color: #b2b2b2;
+}
+
+#usuario-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.fa-caret-up {
+  margin-right: 10px;
+}
+
+.fa-caret-down {
+  margin-right: 10px;
+}
+
+#pergunta-descricao {
+  padding: 1%;
+  border: 1px solid #eee;   
+  word-wrap: break-word;
+}
+
+#comentario {
+  padding: 10px;
+  background-color: grey;
+}
+
+#pergunta {
+  background-color: white; 
+  padding: 2%;
+}
+
+#pergunta-avaliacao {
+  display: inline-block;
+}
+
+#pergunta-header {
+  display: inline-block;
+  margin-left: 2%;
+}
+
+#pergunta-autor {
+  background-color: #eee; 
+  padding: 1%; 
+  width: 20%
+}
+
+#editor-group {
+  width: 100%; 
+  background-color: #3aafa9;
+}
+
+#resp-textbox textarea {
+  width: 100%;
+  margin-bottom: -3px;
+  height:300px;
+}
+
+#text {
+  width: 50%;
+}
+
+#resp-textbox textarea:focus {
+  /*ANIMAÇÕES*/
+}
+
+#noAnswer {
+  padding: 3%;
+  background-color: #FFF3CD;
+  color: #B87A04;
+  text-align: middle;
+}
+
+#noAnswer .far {
+  font-size: 4em;
+}
+
+#pergunta-container {
+  background-color: white;
+  padding: 2%;
+}
+
+#pergunta-container-link a{
+  text-decoration: none; 
+}
+
+#pergunta-data {
+  margin-left: 20px;
+}
+
+
+/*FIM DO FRAMEWORK*/

@@ -1,0 +1,15 @@
+<script type="text/javascript">
+function qsa(sel) {
+    return Array.apply(null, document.querySelectorAll(sel));
+}
+qsa(".code").forEach(function (editorEl) {
+  CodeMirror.fromTextArea(editorEl, {
+    mode: "text/html",
+    lineWrapping: true,
+    lineNumbers: true,
+    styleActiveLine: true,
+    matchBrackets: true,
+    theme: '3024-day',
+  });
+});
+</script>
