@@ -1,59 +1,84 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>HTML | Iframes</title>
-	<meta charset="utf-8">
-	<?php include "codemirrorscripts.html"; ?>	
 
-	<link rel="stylesheet" type="text/css" href="sheet/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="sheet/frameword.css">
-	<script defer src="fawesome/svg-with-js/js/fontawesome-all.js"></script>
-	<?php include "sheet/scriptjs.html" ?>
+	<meta charset="utf-8">
+    <?php include "link_includes.php"; ?>
 
 
 </head>
 <body>
-    	<div id="header1">
-    		<h1>O elemento &ltiframe></h1>
-    	</div>
+    	<?php include "navbar-top.php"; ?>
+	    <div id="page-header">
+	        <h1>Iframes</h1>
+	    </div>
 
-  		<div class="container-fluid">
-    		<div class="row">
-    			<?php include "sidenav.html"; ?>
-    		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-2 col-xl-7">
-    			<div id="page-body">
+  	<div class="container-fluid">
+    <div class="row no-gutter">
+    <?php include "sidenav.html"; ?>
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-2 col-xl-8">
+        <div id="page-body">
+            <div id="page-principal">
+                <section id="definição">  
+					    <h2>Definição</h2>
+					    <p>Um iframe é uma espécie de container utilizado para aninhar uma página dentro da outra.</p>
+						<p>A tag &ltiframe> deve ser utilizada em conjunto com o atributo <strong>src</strong>, que informa o navegador sobre qual página carregar dentro do frame.</p>
 
-    				<div id="page-principal">
-    					<section id="principal">
-					    	<h2>Definição</h2>
-					    	<p>Um iframe é uma espécie de container utilizado para aninhar uma página dentro da outra.</p>
-							<p>A tag &ltiframe> deve ser utilizada em conjunto com o atribuyo <strong>src</strong>, que informa o navegador sobre qual página carregar dentro do frame.</p>
+						<p>Uma mensagem pode ser inserida dentro do elemento para ser mostrada caso o navegador do usuário não dê suporte aos iframes.</p>
+						
 
-							<div id="nota">
-								<b>Notas de uso</b>
-								<hr>
-								Uma mensagem pode ser inserida dentro do elemento para ser mostrada caso o navegador do usuário não dê suporte aos iframes.
-							</div>
+						<?php include "Exemplos/HTML_Iframe/Ex_Iframe_00.php"; ?>
+				</section>
+			</div>
+			<div id="page-atr">                
+                <section id="atributos">
+                <h2>Atributos</h2>
+                <div id="page-atr-body">
 
-							<br>
+                <section id="atr-global">
+                    <div class="atr">   
+                        <div class="atr-header">
+                            <div class="atr-title">
+                                <h3>Atributos globais</h3>
+                            </div>
+                        </div>
+                        <p>Os elementos apresentados neste tutorial dão suporte aos atributos globais do HTML.</p>
+                        <p>Para saber mais sobre esses atributos <a href="HTML_Atributos.php">clique aqui!</a></p>
+                    </div>  
+                </section>
 
-							<?php include "Exemplos/HTML_Iframe/Ex_Iframe_00.php"; ?>
-						</section>
-		
-						<hr>
-	
-							
-						<h2 id="atr">Atributos</h2>
-						<section id="atr-explain">
+                <section id="atr-height">
+                    <div class="atr">
+                        <div class="atr-header">
+                            <div class="atr-title">
+                                <h3>height</h3>
+                            </div>
+                        </div>
+                    	<p>Define em pixels a altura do iframe.</p>
+                    </div>
+                </section>
 
-							<h3>height</h3>
-							<p>Define em pixels a altura do iframe.</p>
+                <section id="atr-name">
+                    <div class="atr">
+                        <div class="atr-header">
+                            <div class="atr-title">
+                                <h3>name</h3>
+                            </div>
+                        </div>
+                    	<p>Define um nome ao elemento.</p>
+                    </div>
+                </section>
 
-							<h3>name</h3>
-							<p>Define um nome ao elemento.</p>
-
-							<h3>sandbox</h3>
-							<p>Atribui restrições ao iframe</p>
+                <section id="atr-sandbox">
+                    <div class="atr">
+                        <div class="atr-header">
+                            <div class="atr-title">
+                                <h3>sandbox</h3>
+                            </div>
+                        </div>
+                    	<p>Atribui restrições ao iframe</p>
 							<p>Esse atributo pode receber um valor ou funcionar como um atributo booleano.</p>
 							<p>Caso o atributo não receba nenhum valor, todas as restrições são aplicadas.</p>
 
@@ -83,27 +108,38 @@
 									<td>Permite o uso de scripts dentro do iframe</td>
 								</tr>
 							</table>
+                    </div>
+                </section>
 
-							<h3>src</h3>
-							<p>Iforma qual o documento referenciado.</p>
+                <section id="atr-src">
+                    <div class="atr">
+                        <div class="atr-header">
+                            <div class="atr-title">
+                                <h3>src</h3>
+                            </div>
+                        </div>
+                    	<p>Informa qual o documento referenciado.</p>
+                    </div>
+                </section>
 
-							<h3>srcdoc</h3>
-							<p>Permite que o código renderizado seja escrito diretamente no elemento.</p>
+                </div>
+                </section>
+            </div>
+	
+			<hr>
+            <hr>
+            <div id="final">
+            	<a href="HTML_Img.php" class="btn btn-lg btn-success" ">Voltar</a>
+            	<a href="HTML_ALinks.php" class="btn btn-lg btn-success" style="display: inline; float: right">Próxima página</a>
+            </div>
 
-							<h3>width</h3>
-							<p>Define em pixel a largura do iframe.</p>
-						
-					</section>	
+	        </div>
+	               </div>
+	           </div>
+            </div>
 
-					<hr>
-
-    			</div>	
-		    </div>
-		</div>
-  	</div>
-	</div> 
-
+    
     <?php include "codemirrorconfig.html" ?>
-  	
+
 </body>
 </html>
